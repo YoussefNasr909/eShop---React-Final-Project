@@ -691,15 +691,15 @@
                         "method": "GET",
                         "header": [],
                         "url": {
-                            "raw": "{{baseUrl}}/db",
+                            "raw": "{{baseUrl}}/health",
                             "host": [
                                 "{{baseUrl}}"
                             ],
                             "path": [
-                                "db"
+                                "health"
                             ]
                         },
-                        "description": "Get the entire database structure (for debugging)"
+                        "description": "Check if the API server is running and healthy"
                     },
                     "response": []
                 },
