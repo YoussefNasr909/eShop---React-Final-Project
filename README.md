@@ -118,19 +118,13 @@ src/
 ## 📸 Screenshots
 
 ### Dashboard Overview
-*KPI cards, charts showing products and wallet activity*
+![Dashboard Overview](./screenshots/dashboard_overview.png)
 
 ### Products Management
-*DataTable with search, filters, and CRUD actions*
-
-### Order Creation
-*Product selection with live total calculation*
-
-### Wallet Operations
-*Deposit/withdraw forms with transaction history*
+![Products Management](./screenshots/products_management.png)
 
 ### Dark Mode
-*Full dark theme support across all pages*
+![Dark Mode](./screenshots/dark_mode.png)
 
 ## 📝 License
 
