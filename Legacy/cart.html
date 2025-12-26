@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShop | Shopping Cart</title>
+    <link rel="stylesheet" href="style/store.css">
+    <link rel="stylesheet" href="style/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="super-nav">
+        <div class="container super-flex">
+            <div class="contact-info">
+                <span><i class="fa-solid fa-location-dot"></i> 40, Elhilaly St, Assiut, Egypt</span>
+                <span><i class="fa-solid fa-phone"></i> 01064018172</span>
+            </div>
+            <div class="extra-info">
+                <span>USD <i class="fa-solid fa-chevron-down"></i></span>
+                <span>English <i class="fa-solid fa-chevron-down"></i></span>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="top-nav">
+        <div class="container nav-flex">
+            <div class="logo">e-shop<span class="dot">.</span></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="user-actions">
+                <button onclick="toggleDarkMode()" class="icon-btn"><i class="fa-solid fa-moon"></i></button>
+                <a href="cart.html" class="action-item">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" class="badge">0</span>
+                    </div>
+                    <div class="action-text"><small>Cart</small><strong>$0.00</strong></div>
+                </a>
+                <a href="#" class="action-item">
+                    <div class="icon-wrapper"><i class="fa-regular fa-user"></i></div>
+                    <div class="action-text"><small>User</small><strong>Account</strong></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bottom-nav">
+        <div class="container nav-container">
+            <a href="products.html" class="menu-btn"><i class="fa-solid fa-bars"></i> All Categories</a>
+            <ul class="center-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container cart-page-container">
+        
+        <h1 class="page-title">Your Cart</h1>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th style="text-align: left;">PRODUCT</th>
+                    <th>PRICE</th>
+                    <th>QTY</th>
+                    <th>TOTAL</th>
+                    <th></th> </tr>
+            </thead>
+            <tbody id="cart-table-body">
+                </tbody>
+        </table>
+
+        <div class="cart-bottom-actions">
+            
+            <div class="coupon-section">
+                <input type="text" placeholder="Enter coupon code">
+                <button class="btn-outline">Apply Code</button>
+            </div>
+
+            <div class="cart-totals-box">
+                <div class="total-row">
+                    <span>SUB TOTAL</span>
+                    <strong id="cart-subtotal">$0.00</strong>
+                </div>
+                <small style="color: #777;">(excl. shipping fee)</small>
+                
+                <div class="checkout-buttons">
+                    <a href="products.html" class="continue-link">Continue Shopping</a>
+                    <button class="btn btn-update">Checkout</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>E-Shop.</h4>
+                <p>40, Elhilaly St, Assiut, Egypt</p>
+                <p>+20 106401 8172</p>
+            </div>
+            <div>
+                <h4>Shop</h4>
+                <ul><li>Phones</li><li>Laptops</li></ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul><li>Contact Us</li><li>FAQ</li></ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <p><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i></p>
+            </div>
+        </div>
+        <div class="copyright"><p>&copy; 2025 E-Shop. All Rights Reserved.</p></div>
+    </footer>
+
+    <script src="js/store.js"></script>
+</body>
+</html>

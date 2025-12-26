@@ -1,0 +1,794 @@
+{
+    "info": {
+        "name": "E-Commerce Admin Dashboard API",
+        "description": "Complete API collection for the E-Commerce Admin Dashboard with all available endpoints and methods. Base URL: http://localhost:3001",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_postman_id": "ecommerce-admin-api",
+        "version": "1.0.0"
+    },
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:3001",
+            "type": "string"
+        }
+    ],
+    "item": [
+        {
+            "name": "Products",
+            "description": "Product management endpoints",
+            "item": [
+                {
+                    "name": "Get All Products",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/products",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products"
+                            ]
+                        },
+                        "description": "Retrieve all products from the inventory"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Product by ID",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/products/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "Product ID"
+                                }
+                            ]
+                        },
+                        "description": "Retrieve a specific product by its ID"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create Product",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"sku\": \"SKU-2000\",\n  \"name\": \"New Product\",\n  \"description\": \"Product description\",\n  \"price\": 99.99,\n  \"quantity\": 100,\n  \"category\": \"Electronics\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/products",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products"
+                            ]
+                        },
+                        "description": "Create a new product in the inventory"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update Product",
+                    "request": {
+                        "method": "PATCH",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"Updated Product Name\",\n  \"price\": 129.99,\n  \"quantity\": 150\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/products/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "Product ID"
+                                }
+                            ]
+                        },
+                        "description": "Update an existing product (partial update)"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete Product",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/products/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "Product ID"
+                                }
+                            ]
+                        },
+                        "description": "Delete a product from the inventory"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Products by Category",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/products?category=Audio",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products"
+                            ],
+                            "query": [
+                                {
+                                    "key": "category",
+                                    "value": "Audio",
+                                    "description": "Filter by category"
+                                }
+                            ]
+                        },
+                        "description": "Filter products by category"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Search Products",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/products?q=wireless",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products"
+                            ],
+                            "query": [
+                                {
+                                    "key": "q",
+                                    "value": "wireless",
+                                    "description": "Search query"
+                                }
+                            ]
+                        },
+                        "description": "Search products by name or description"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Orders",
+            "description": "Order management endpoints",
+            "item": [
+                {
+                    "name": "Get All Orders",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/orders",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "orders"
+                            ]
+                        },
+                        "description": "Retrieve all orders"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Order by ID",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/orders/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "orders",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "Order ID"
+                                }
+                            ]
+                        },
+                        "description": "Retrieve a specific order by its ID"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create Order",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"customerEmail\": \"customer@example.com\",\n  \"items\": [\n    {\n      \"productId\": \"1\",\n      \"productName\": \"Wireless Bluetooth Headphones\",\n      \"quantity\": 2,\n      \"price\": 149.99\n    },\n    {\n      \"productId\": \"2\",\n      \"productName\": \"USB-C Fast Charger 65W\",\n      \"quantity\": 1,\n      \"price\": 39.99\n    }\n  ],\n  \"totalAmount\": 339.97\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/orders",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "orders"
+                            ]
+                        },
+                        "description": "Create a new order (automatically reduces product stock)"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete Order",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/orders/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "orders",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "Order ID"
+                                }
+                            ]
+                        },
+                        "description": "Delete an order"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Orders by Customer",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/orders?customerEmail=john.doe@example.com",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "orders"
+                            ],
+                            "query": [
+                                {
+                                    "key": "customerEmail",
+                                    "value": "john.doe@example.com",
+                                    "description": "Filter by customer email"
+                                }
+                            ]
+                        },
+                        "description": "Filter orders by customer email"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Sort Orders by Date",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/orders?_sort=createdAt&_order=desc",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "orders"
+                            ],
+                            "query": [
+                                {
+                                    "key": "_sort",
+                                    "value": "createdAt",
+                                    "description": "Sort by field"
+                                },
+                                {
+                                    "key": "_order",
+                                    "value": "desc",
+                                    "description": "Sort order (asc/desc)"
+                                }
+                            ]
+                        },
+                        "description": "Get orders sorted by creation date"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Wallets",
+            "description": "Wallet management endpoints",
+            "item": [
+                {
+                    "name": "Get All Wallets",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/wallets",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "wallets"
+                            ]
+                        },
+                        "description": "Retrieve all wallets"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Wallet by ID",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/wallets/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "wallets",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "Wallet ID"
+                                }
+                            ]
+                        },
+                        "description": "Retrieve a specific wallet by its ID"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create Wallet",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"ownerEmail\": \"user@example.com\",\n  \"balance\": 0\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/wallets",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "wallets"
+                            ]
+                        },
+                        "description": "Create a new wallet for a user"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update Wallet Balance",
+                    "request": {
+                        "method": "PATCH",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"balance\": 1000\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/wallets/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "wallets",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "Wallet ID"
+                                }
+                            ]
+                        },
+                        "description": "Update wallet balance (direct update)"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Wallets by Owner",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/wallets?ownerEmail=admin@eshop.com",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "wallets"
+                            ],
+                            "query": [
+                                {
+                                    "key": "ownerEmail",
+                                    "value": "admin@eshop.com",
+                                    "description": "Filter by owner email"
+                                }
+                            ]
+                        },
+                        "description": "Filter wallets by owner email"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Wallet Transactions",
+            "description": "Wallet transaction endpoints",
+            "item": [
+                {
+                    "name": "Get All Transactions",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/walletTransactions",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "walletTransactions"
+                            ]
+                        },
+                        "description": "Retrieve all wallet transactions"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Transactions by Wallet ID",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/walletTransactions?walletId=1",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "walletTransactions"
+                            ],
+                            "query": [
+                                {
+                                    "key": "walletId",
+                                    "value": "1",
+                                    "description": "Filter by wallet ID"
+                                }
+                            ]
+                        },
+                        "description": "Get all transactions for a specific wallet"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Transaction by ID",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/walletTransactions/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "walletTransactions",
+                                ":id"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "Transaction ID"
+                                }
+                            ]
+                        },
+                        "description": "Retrieve a specific transaction by its ID"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create Transaction (Deposit)",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"walletId\": \"1\",\n  \"type\": \"deposit\",\n  \"amount\": 500,\n  \"reference\": \"REF-12345\",\n  \"description\": \"Deposit from bank transfer\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/walletTransactions",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "walletTransactions"
+                            ]
+                        },
+                        "description": "Create a deposit transaction"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create Transaction (Withdraw)",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"walletId\": \"1\",\n  \"type\": \"withdraw\",\n  \"amount\": 200,\n  \"reference\": \"REF-12346\",\n  \"description\": \"Withdrawal to bank account\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/walletTransactions",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "walletTransactions"
+                            ]
+                        },
+                        "description": "Create a withdrawal transaction"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Transactions by Type",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/walletTransactions?type=deposit",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "walletTransactions"
+                            ],
+                            "query": [
+                                {
+                                    "key": "type",
+                                    "value": "deposit",
+                                    "description": "Filter by transaction type (deposit/withdraw)"
+                                }
+                            ]
+                        },
+                        "description": "Filter transactions by type"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Sort Transactions by Date",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/walletTransactions?_sort=createdAt&_order=desc",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "walletTransactions"
+                            ],
+                            "query": [
+                                {
+                                    "key": "_sort",
+                                    "value": "createdAt",
+                                    "description": "Sort by field"
+                                },
+                                {
+                                    "key": "_order",
+                                    "value": "desc",
+                                    "description": "Sort order (asc/desc)"
+                                }
+                            ]
+                        },
+                        "description": "Get transactions sorted by creation date"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "JSON Server Utilities",
+            "description": "JSON Server specific endpoints and utilities",
+            "item": [
+                {
+                    "name": "Database Health Check",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/db",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "db"
+                            ]
+                        },
+                        "description": "Get the entire database structure (for debugging)"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Pagination Example",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/products?_page=1&_limit=10",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products"
+                            ],
+                            "query": [
+                                {
+                                    "key": "_page",
+                                    "value": "1",
+                                    "description": "Page number"
+                                },
+                                {
+                                    "key": "_limit",
+                                    "value": "10",
+                                    "description": "Items per page"
+                                }
+                            ]
+                        },
+                        "description": "Get paginated results"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Full-text Search Example",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/products?q=gaming",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products"
+                            ],
+                            "query": [
+                                {
+                                    "key": "q",
+                                    "value": "gaming",
+                                    "description": "Search across all fields"
+                                }
+                            ]
+                        },
+                        "description": "Full-text search across all product fields"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Range Filter Example",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/products?price_gte=100&price_lte=500",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products"
+                            ],
+                            "query": [
+                                {
+                                    "key": "price_gte",
+                                    "value": "100",
+                                    "description": "Greater than or equal to"
+                                },
+                                {
+                                    "key": "price_lte",
+                                    "value": "500",
+                                    "description": "Less than or equal to"
+                                }
+                            ]
+                        },
+                        "description": "Filter products by price range"
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShop</title>
+    <link rel="stylesheet" href="style/store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="super-nav">
+        <div class="container super-flex">
+            <div class="contact-info">
+                <span><i class="fa-solid fa-location-dot"></i> 40, Elhilaly St, Assiut, Egypt</span>
+                <span><i class="fa-solid fa-phone"></i> 01064018172</span>
+            </div>
+            <div class="extra-info">
+                <span>USD <i class="fa-solid fa-chevron-down"></i></span>
+                <span>English <i class="fa-solid fa-chevron-down"></i></span>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="top-nav">
+        <div class="container nav-flex">
+            <div class="logo">e-shop<span class="dot">.</span></div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="user-actions">
+                <button onclick="toggleDarkMode()" class="icon-btn" title="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <a href="cart.html" class="action-item">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" class="badge">0</span>
+                    </div>
+                    <div class="action-text">
+                        <small>Cart</small>
+                        <strong>$0.00</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="action-item">
+                    <div class="icon-wrapper">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="action-text">
+                        <small>User</small>
+                        <strong>Account</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bottom-nav">
+        <div class="container nav-container">
+            <a href="products.html" class="menu-btn"><i class="fa-solid fa-bars"></i> All Categories</a>
+            
+            <ul class="center-links">
+                <li><a href="home.html" class="active-link">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul class="right-links">
+                <li><a href="#">Limited Sale 🔥</a></li>
+                <li><a href="#">Best Seller</a></li>
+                <li><a href="#">New Arrival</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h2>Your One-Stop <br> Electronic Market</h2>
+                <p>Welcome to e-shop, a place where you can buy everything about electronics. Sale every day!</p>
+                <a href="products.html" class="btn btn-hero">Shop Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="features-strip">
+        <div class="container features-grid">
+            <div class="feature-item">
+                <span><i class="fa-solid fa-box-open" style="color:#ff523b;"></i></span>
+                <div>
+                    <strong>Free Shipping</strong>
+                    <p>On all orders over $50</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span><i class="fa-solid fa-shield-halved" style="color:#ff523b;"></i></span>
+                <div>
+                    <strong>Secure Payment</strong>
+                    <p>100% Protected</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span><i class="fa-solid fa-headset" style="color:#ff523b;"></i></span>
+                <div>
+                    <strong>24/7 Support</strong>
+                    <p>Dedicated Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-padding">
+        <div class="section-header">
+            <h3>Featured Products</h3>
+            <a href="products.html" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div id="featured-products-grid" class="product-grid-4"></div>
+    </section>
+
+    <section class="container section-padding">
+        <div class="promo-banner-grid">
+            <div class="promo-box box-1">
+                <h4>Free Shipping Everywhere!</h4>
+                <p>New smart watches available now.</p>
+                <a href="products.html" class="btn btn-small">View More</a>
+                <img src="images/Box-Transparent.png" class="promo-img">
+            </div>
+            <div class="promo-box box-2">
+                <h4>Black Friday Calculator</h4>
+                <p>Get 50% off standard items.</p>
+                <a href="products.html" class="btn btn-small">View More</a>
+                <img src="images/smart-watches.png" class="promo-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-padding">
+        <div class="section-header">
+            <h3>New Arrivals</h3>
+            <a href="products.html" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div id="new-products-grid" class="product-grid-4"></div>
+    </section>
+
+    <section class="sale-banner">
+        <div class="container sale-flex">
+            <div class="sale-text">
+                <h2>Spring Sale</h2>
+                <div class="countdown">02 Days : 14 Hours : 30 Mins</div>
+                <a href="products.html" class="btn btn-white">Shop Sale</a>
+            </div>
+            <div class="sale-image">
+                <img src="images/sale.jpg" alt="Sale Items">
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container newsletter-flex">
+            <div class="news-text">
+                <h3>Get Our Updates</h3>
+                <p>Subscribe to get special offers and latest news.</p>
+            </div>
+            <div class="news-form">
+                <input type="email" placeholder="Enter your email address...">
+                <button class="btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>E-Shop.</h4>
+                <p>40, Elhilaly St, Assiut, Egypt</p>
+                <p>+20 106401 8172</p>
+            </div>
+            <div>
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="products.html">Phones</a></li>
+                    <li><a href="products.html">Laptops</a></li>
+                    <li><a href="products.html">Audio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <p>
+                    <i class="fa-brands fa-facebook"></i> 
+                    <i class="fa-brands fa-instagram"></i> 
+                    <i class="fa-brands fa-twitter"></i>
+                </p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 E-Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/store.js"></script>
+</body>
+</html>

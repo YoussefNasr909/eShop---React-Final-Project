@@ -1,0 +1,942 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "sku": "SKU-1000",
+      "name": "USB-C Fast Charger 65W",
+      "description": "Universal fast charger compatible with laptops and phones",
+      "price": 39.99,
+      "quantity": 120,
+      "category": "Accessories",
+      "createdAt": "2024-01-20T14:00:00Z"
+    },
+    {
+      "id": "3",
+      "sku": "SKU-1001",
+      "name": "Mechanical Gaming Keyboard",
+      "description": "RGB backlit mechanical keyboard with Cherry MX switches",
+      "price": 129.99,
+      "quantity": 30,
+      "category": "Peripherals",
+      "createdAt": "2024-02-01T09:15:00Z"
+    },
+    {
+      "id": "4",
+      "sku": "SKU-1002",
+      "name": "4K Webcam Pro",
+      "description": "Ultra HD webcam with auto-focus and built-in microphone",
+      "price": 89.99,
+      "quantity": 18,
+      "category": "Peripherals",
+      "createdAt": "2024-02-10T11:45:00Z"
+    },
+    {
+      "id": "5",
+      "sku": "SKU-1003",
+      "name": "Portable SSD 1TB",
+      "description": "High-speed external SSD with USB 3.2 Gen 2",
+      "price": 109.99,
+      "quantity": 65,
+      "category": "Storage",
+      "createdAt": "2024-02-15T16:20:00Z"
+    },
+    {
+      "id": "6",
+      "sku": "SKU-1004",
+      "name": "Redragon M908 IMPACT MMO Gaming Mouse",
+      "description": "High precision MMO gaming mouse with 12 programmable buttons",
+      "price": 599,
+      "quantity": 450,
+      "category": "Peripherals",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "7",
+      "sku": "SKU-1005",
+      "name": "Logitech G502 HERO Gaming Mouse",
+      "description": "High performance gaming mouse with HERO 25K sensor",
+      "price": 899,
+      "quantity": 174,
+      "category": "Peripherals",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "8",
+      "sku": "SKU-1006",
+      "name": "Razer DeathAdder V2 Gaming Mouse",
+      "description": "Ergonomic esports gaming mouse with optical switches",
+      "price": 1100,
+      "quantity": 100,
+      "category": "Peripherals",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "9",
+      "sku": "SKU-1007",
+      "name": "Corsair K70 RGB MK.2 Mechanical Keyboard",
+      "description": "Premium mechanical gaming keyboard with Cherry MX switches",
+      "price": 2000,
+      "quantity": 100,
+      "category": "Peripherals",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "10",
+      "sku": "SKU-1008",
+      "name": "HyperX Alloy FPS Pro Mechanical Keyboard",
+      "description": "Compact tenkeyless mechanical gaming keyboard",
+      "price": 1990,
+      "quantity": 133,
+      "category": "Peripherals",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "11",
+      "sku": "SKU-1009",
+      "name": "Samsung 970 EVO Plus 1TB NVMe SSD",
+      "description": "High-performance NVMe SSD with V-NAND technology",
+      "price": 3299,
+      "quantity": 19,
+      "category": "Storage",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "12",
+      "sku": "SKU-1010",
+      "name": "WD Blue SN570 1TB NVMe SSD",
+      "description": "Fast NVMe SSD for creative professionals",
+      "price": 2399,
+      "quantity": 35,
+      "category": "Storage",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "13",
+      "sku": "SKU-1011",
+      "name": "Kingston A2000 500GB NVMe SSD",
+      "description": "Entry-level NVMe SSD with excellent value",
+      "price": 899,
+      "quantity": 50,
+      "category": "Storage",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "14",
+      "sku": "SKU-1012",
+      "name": "Samsung Galaxy A14 (64GB)",
+      "description": "Budget-friendly smartphone with great features",
+      "price": 3999,
+      "quantity": 15,
+      "category": "Phones",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "15",
+      "sku": "SKU-1013",
+      "name": "Xiaomi Redmi Note 12 (128GB)",
+      "description": "Feature-packed mid-range smartphone",
+      "price": 4999,
+      "quantity": 12,
+      "category": "Phones",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "16",
+      "sku": "SKU-1014",
+      "name": "Apple AirPods Pro (2nd Gen)",
+      "description": "Premium wireless earbuds with active noise cancellation",
+      "price": 7999,
+      "quantity": 9,
+      "category": "Audio",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "17",
+      "sku": "SKU-1015",
+      "name": "Sony WH-1000XM4 Wireless Headphones",
+      "description": "Industry-leading noise cancelling headphones",
+      "price": 7499,
+      "quantity": 8,
+      "category": "Audio",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "18",
+      "sku": "SKU-1016",
+      "name": "Bose QuietComfort 45 Headphones",
+      "description": "Legendary noise cancelling with signature comfort",
+      "price": 6999,
+      "quantity": 6,
+      "category": "Audio",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "19",
+      "sku": "SKU-1017",
+      "name": "Anker PowerCore 10000 Power Bank",
+      "description": "Ultra-compact portable charger with high-speed charging",
+      "price": 499,
+      "quantity": 60,
+      "category": "Accessories",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "20",
+      "sku": "SKU-1018",
+      "name": "TP-Link Archer AX50 Wi-Fi 6 Router",
+      "description": "Next-gen Wi-Fi 6 router for faster connections",
+      "price": 1100,
+      "quantity": 33,
+      "category": "Networking",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "21",
+      "sku": "SKU-1019",
+      "name": "ASUS TUF Gaming VG27AQ 27 Monitor",
+      "description": "27-inch IPS gaming monitor with 165Hz refresh rate",
+      "price": 1100,
+      "quantity": 33,
+      "category": "Monitors",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "22",
+      "sku": "SKU-1020",
+      "name": "Dell UltraSharp U2720Q 27 4K Monitor",
+      "description": "Professional 4K USB-C monitor with wide color coverage",
+      "price": 14999,
+      "quantity": 4,
+      "category": "Monitors",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "23",
+      "sku": "SKU-1021",
+      "name": "Seagate Barracuda 2TB HDD",
+      "description": "Reliable desktop hard drive for everyday computing",
+      "price": 1299,
+      "quantity": 27,
+      "category": "Storage",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "24",
+      "sku": "SKU-1022",
+      "name": "Samsung Odyssey G5 32 Curved Monitor (LC32G55T)",
+      "description": "32-inch curved gaming monitor with 144Hz WQHD",
+      "price": 8999,
+      "quantity": 5,
+      "category": "Monitors",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "25",
+      "sku": "SKU-1023",
+      "name": "Logitech C920 HD Pro Webcam",
+      "description": "Full HD 1080p webcam for video conferencing",
+      "price": 1999,
+      "quantity": 30,
+      "category": "Peripherals",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "26",
+      "sku": "SKU-1111",
+      "name": "CircuitBreaker",
+      "description": "High-quality circuit protection device",
+      "price": 1100,
+      "quantity": 33,
+      "category": "Electronics",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "27",
+      "sku": "SKU-1777",
+      "name": "USB-C Cable",
+      "description": "Premium braided USB-C cable for fast charging",
+      "price": 120,
+      "quantity": 50,
+      "category": "Accessories",
+      "createdAt": "2025-08-20T10:00:00Z"
+    },
+    {
+      "id": "28",
+      "sku": "SKU-1770",
+      "name": "IPhone 17 Charger",
+      "description": "Fast charging adapter for iPhone 17 series",
+      "price": 300,
+      "quantity": 98,
+      "category": "Accessories",
+      "createdAt": "2025-08-20T10:00:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "customerEmail": "john.doe@example.com",
+      "items": [
+        {
+          "productId": "1",
+          "productName": "Wireless Bluetooth Headphones",
+          "quantity": 2,
+          "price": 149.99
+        },
+        {
+          "productId": "2",
+          "productName": "USB-C Fast Charger 65W",
+          "quantity": 1,
+          "price": 39.99
+        }
+      ],
+      "totalAmount": 339.97,
+      "createdAt": "2024-02-20T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "customerEmail": "jane.smith@example.com",
+      "items": [
+        {
+          "productId": "3",
+          "productName": "Mechanical Gaming Keyboard",
+          "quantity": 1,
+          "price": 129.99
+        },
+        {
+          "productId": "5",
+          "productName": "Portable SSD 1TB",
+          "quantity": 2,
+          "price": 109.99
+        }
+      ],
+      "totalAmount": 349.97,
+      "createdAt": "2024-02-22T15:30:00Z"
+    },
+    {
+      "id": "3",
+      "customerEmail": "ahmed.hassan@example.com",
+      "items": [
+        {
+          "productId": "7",
+          "productName": "Logitech G502 HERO Gaming Mouse",
+          "quantity": 1,
+          "price": 899
+        },
+        {
+          "productId": "10",
+          "productName": "HyperX Alloy FPS Pro Mechanical Keyboard",
+          "quantity": 1,
+          "price": 1990
+        }
+      ],
+      "totalAmount": 2889,
+      "createdAt": "2025-08-23T09:15:00Z"
+    },
+    {
+      "id": "4",
+      "customerEmail": "sarah.jones@example.com",
+      "items": [
+        {
+          "productId": "16",
+          "productName": "Apple AirPods Pro (2nd Gen)",
+          "quantity": 1,
+          "price": 7999
+        }
+      ],
+      "totalAmount": 7999,
+      "createdAt": "2025-08-23T11:30:00Z"
+    },
+    {
+      "id": "5",
+      "customerEmail": "omar.ali@example.com",
+      "items": [
+        {
+          "productId": "11",
+          "productName": "Samsung 970 EVO Plus 1TB NVMe SSD",
+          "quantity": 2,
+          "price": 3299
+        },
+        {
+          "productId": "23",
+          "productName": "Seagate Barracuda 2TB HDD",
+          "quantity": 1,
+          "price": 1299
+        }
+      ],
+      "totalAmount": 7897,
+      "createdAt": "2025-08-24T14:20:00Z"
+    },
+    {
+      "id": "6",
+      "customerEmail": "fatma.ibrahim@example.com",
+      "items": [
+        {
+          "productId": "17",
+          "productName": "Sony WH-1000XM4 Wireless Headphones",
+          "quantity": 1,
+          "price": 7499
+        },
+        {
+          "productId": "19",
+          "productName": "Anker PowerCore 10000 Power Bank",
+          "quantity": 2,
+          "price": 499
+        }
+      ],
+      "totalAmount": 8497,
+      "createdAt": "2025-08-24T16:45:00Z"
+    },
+    {
+      "id": "7",
+      "customerEmail": "mohamed.khalil@example.com",
+      "items": [
+        {
+          "productId": "21",
+          "productName": "ASUS TUF Gaming VG27AQ 27\" Monitor",
+          "quantity": 1,
+          "price": 1100
+        },
+        {
+          "productId": "8",
+          "productName": "Razer DeathAdder V2 Gaming Mouse",
+          "quantity": 1,
+          "price": 1100
+        }
+      ],
+      "totalAmount": 2200,
+      "createdAt": "2025-08-25T10:00:00Z"
+    },
+    {
+      "id": "8",
+      "customerEmail": "nour.ahmed@example.com",
+      "items": [
+        {
+          "productId": "14",
+          "productName": "Samsung Galaxy A14 (64GB)",
+          "quantity": 1,
+          "price": 3999
+        },
+        {
+          "productId": "27",
+          "productName": "USB-C Cable",
+          "quantity": 3,
+          "price": 120
+        }
+      ],
+      "totalAmount": 4359,
+      "createdAt": "2025-08-25T13:30:00Z"
+    },
+    {
+      "id": "9",
+      "customerEmail": "heba.mohamed@example.com",
+      "items": [
+        {
+          "productId": "22",
+          "productName": "Dell UltraSharp U2720Q 27\" 4K Monitor",
+          "quantity": 1,
+          "price": 14999
+        }
+      ],
+      "totalAmount": 14999,
+      "createdAt": "2025-08-26T09:00:00Z"
+    },
+    {
+      "id": "10",
+      "customerEmail": "ali.hassan@example.com",
+      "items": [
+        {
+          "productId": "9",
+          "productName": "Corsair K70 RGB MK.2 Mechanical Keyboard",
+          "quantity": 1,
+          "price": 2000
+        },
+        {
+          "productId": "6",
+          "productName": "Redragon M908 IMPACT MMO Gaming Mouse",
+          "quantity": 1,
+          "price": 599
+        },
+        {
+          "productId": "25",
+          "productName": "Logitech C920 HD Pro Webcam",
+          "quantity": 1,
+          "price": 1999
+        }
+      ],
+      "totalAmount": 4598,
+      "createdAt": "2025-08-26T15:20:00Z"
+    },
+    {
+      "id": "11",
+      "customerEmail": "rawan.salem@example.com",
+      "items": [
+        {
+          "productId": "15",
+          "productName": "Xiaomi Redmi Note 12 (128GB)",
+          "quantity": 1,
+          "price": 4999
+        },
+        {
+          "productId": "28",
+          "productName": "IPhone 17 Charger",
+          "quantity": 1,
+          "price": 300
+        }
+      ],
+      "totalAmount": 5299,
+      "createdAt": "2025-08-27T11:45:00Z"
+    },
+    {
+      "id": "12",
+      "customerEmail": "mahmoud.farouk@example.com",
+      "items": [
+        {
+          "productId": "18",
+          "productName": "Bose QuietComfort 45 Headphones",
+          "quantity": 1,
+          "price": 6999
+        }
+      ],
+      "totalAmount": 6999,
+      "createdAt": "2025-08-28T10:30:00Z"
+    },
+    {
+      "id": "13",
+      "customerEmail": "mariam.adel@example.com",
+      "items": [
+        {
+          "productId": "20",
+          "productName": "TP-Link Archer AX50 Wi-Fi 6 Router",
+          "quantity": 1,
+          "price": 1100
+        },
+        {
+          "productId": "12",
+          "productName": "WD Blue SN570 1TB NVMe SSD",
+          "quantity": 1,
+          "price": 2399
+        }
+      ],
+      "totalAmount": 3499,
+      "createdAt": "2025-08-29T14:00:00Z"
+    },
+    {
+      "id": "14",
+      "customerEmail": "abdullah.omar@example.com",
+      "items": [
+        {
+          "productId": "24",
+          "productName": "Samsung Odyssey G5 32\" Curved Monitor (LC32G55T)",
+          "quantity": 1,
+          "price": 8999
+        },
+        {
+          "productId": "7",
+          "productName": "Logitech G502 HERO Gaming Mouse",
+          "quantity": 1,
+          "price": 899
+        }
+      ],
+      "totalAmount": 9898,
+      "createdAt": "2025-08-30T09:15:00Z"
+    },
+    {
+      "id": "15",
+      "customerEmail": "eman.youssef@example.com",
+      "items": [
+        {
+          "productId": "13",
+          "productName": "Kingston A2000 500GB NVMe SSD",
+          "quantity": 2,
+          "price": 899
+        },
+        {
+          "productId": "19",
+          "productName": "Anker PowerCore 10000 Power Bank",
+          "quantity": 1,
+          "price": 499
+        }
+      ],
+      "totalAmount": 2297,
+      "createdAt": "2025-08-30T16:30:00Z"
+    },
+    {
+      "id": "16",
+      "customerEmail": "nada.khaled@example.com",
+      "items": [
+        {
+          "productId": "1",
+          "productName": "Wireless Bluetooth Headphones",
+          "quantity": 1,
+          "price": 149.99
+        },
+        {
+          "productId": "26",
+          "productName": "CircuitBreaker",
+          "quantity": 2,
+          "price": 1100
+        }
+      ],
+      "totalAmount": 2349.99,
+      "createdAt": "2025-08-31T11:00:00Z"
+    },
+    {
+      "id": "17",
+      "customerEmail": "amal.samir@example.com",
+      "items": [
+        {
+          "productId": "3",
+          "productName": "Mechanical Gaming Keyboard",
+          "quantity": 1,
+          "price": 129.99
+        },
+        {
+          "productId": "8",
+          "productName": "Razer DeathAdder V2 Gaming Mouse",
+          "quantity": 1,
+          "price": 1100
+        }
+      ],
+      "totalAmount": 1229.99,
+      "createdAt": "2025-08-31T14:45:00Z"
+    },
+    {
+      "id": "dcdb",
+      "customerEmail": "mohamed@gmail.com",
+      "items": [
+        {
+          "productId": 1,
+          "sku": "ELEC-001",
+          "name": "Wireless Bluetooth Headphones",
+          "price": 79.99,
+          "quantity": 1
+        },
+        {
+          "productId": 2,
+          "sku": "ELEC-002",
+          "name": "USB-C Fast Charger 65W",
+          "price": 34.99,
+          "quantity": 2
+        }
+      ],
+      "totalAmount": 149.97,
+      "createdAt": "2024-03-10T12:00:00Z"
+    }
+  ],
+  "wallets": [
+    {
+      "id": "1",
+      "ownerEmail": "admin@eshop.com",
+      "balance": 7500,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "ownerEmail": "youssef@gmail.com",
+      "balance": 100931,
+      "createdAt": "2025-08-23T22:41:31.842403Z"
+    },
+    {
+      "id": "3",
+      "ownerEmail": "ali@gmail.com",
+      "balance": 1500.5,
+      "createdAt": "2025-08-23T22:41:43.075372Z"
+    },
+    {
+      "id": "4",
+      "ownerEmail": "ahmed@gmail.com",
+      "balance": 2000,
+      "createdAt": "2025-08-23T22:41:47.972338Z"
+    },
+    {
+      "id": "5",
+      "ownerEmail": "mostafa@gmail.com",
+      "balance": 1800,
+      "createdAt": "2025-08-23T22:42:48.260510Z"
+    },
+    {
+      "id": "6",
+      "ownerEmail": "mohamed@gmail.com",
+      "balance": 1000,
+      "createdAt": "2025-08-23T22:42:53.899187Z"
+    },
+    {
+      "id": "7",
+      "ownerEmail": "omar@gmail.com",
+      "balance": 800.75,
+      "createdAt": "2025-08-23T22:43:04.893632Z"
+    },
+    {
+      "id": "8",
+      "ownerEmail": "abdullah@gmail.com",
+      "balance": 2200,
+      "createdAt": "2025-08-23T22:43:11.825994Z"
+    },
+    {
+      "id": "9",
+      "ownerEmail": "abdelrahman@gmail.com",
+      "balance": 950,
+      "createdAt": "2025-08-23T22:43:21.948237Z"
+    },
+    {
+      "id": "10",
+      "ownerEmail": "abdelhady@gmail.com",
+      "balance": 500,
+      "createdAt": "2025-08-23T22:43:29.798677Z"
+    },
+    {
+      "id": "11",
+      "ownerEmail": "mahmoud@gmail.com",
+      "balance": 750,
+      "createdAt": "2025-08-23T22:43:35.168010Z"
+    },
+    {
+      "id": "12",
+      "ownerEmail": "mariam@gmail.com",
+      "balance": 1300,
+      "createdAt": "2025-08-23T22:44:07.379012Z"
+    },
+    {
+      "id": "13",
+      "ownerEmail": "sarah@gmail.com",
+      "balance": 1100.25,
+      "createdAt": "2025-08-23T22:44:14.508483Z"
+    },
+    {
+      "id": "14",
+      "ownerEmail": "fatma@gmail.com",
+      "balance": 1600,
+      "createdAt": "2025-08-23T22:44:20.485622Z"
+    },
+    {
+      "id": "15",
+      "ownerEmail": "nour@gmail.com",
+      "balance": 1400,
+      "createdAt": "2025-08-23T22:44:26.029598Z"
+    },
+    {
+      "id": "16",
+      "ownerEmail": "amal@gmail.com",
+      "balance": 900,
+      "createdAt": "2025-08-23T22:44:31.136156Z"
+    },
+    {
+      "id": "17",
+      "ownerEmail": "hend@gmail.com",
+      "balance": 1250,
+      "createdAt": "2025-08-23T22:44:36.332696Z"
+    },
+    {
+      "id": "18",
+      "ownerEmail": "heba@gmail.com",
+      "balance": 1150,
+      "createdAt": "2025-08-23T22:44:39.726788Z"
+    },
+    {
+      "id": "19",
+      "ownerEmail": "nada@gmail.com",
+      "balance": 700,
+      "createdAt": "2025-08-23T22:44:43.397073Z"
+    },
+    {
+      "id": "20",
+      "ownerEmail": "rawan@gmail.com",
+      "balance": 1700,
+      "createdAt": "2025-08-23T22:44:47.836278Z"
+    },
+    {
+      "id": "21",
+      "ownerEmail": "eman@gmail.com",
+      "balance": 1350,
+      "createdAt": "2025-08-23T22:44:50.630808Z"
+    },
+    {
+      "id": "22",
+      "ownerEmail": "admin@gmail.com",
+      "balance": 149999999101,
+      "createdAt": "2025-08-23T23:03:38.647071Z"
+    },
+    {
+      "id": "23",
+      "ownerEmail": "tester@gmail.com",
+      "balance": 4780,
+      "createdAt": "2025-08-25T19:23:22.871897Z"
+    },
+    {
+      "id": "24",
+      "ownerEmail": "newtester@gmail.com",
+      "balance": 49500,
+      "createdAt": "2025-08-31T15:07:51.338023Z"
+    }
+  ],
+  "walletTransactions": [
+    {
+      "id": "1",
+      "walletId": "1",
+      "type": "deposit",
+      "amount": 1000,
+      "description": "Initial deposit",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "walletId": "1",
+      "type": "deposit",
+      "amount": 2000,
+      "description": "Sales revenue",
+      "createdAt": "2024-01-15T12:00:00Z"
+    },
+    {
+      "id": "3",
+      "walletId": "1",
+      "type": "withdraw",
+      "amount": 500,
+      "description": "Supplier payment",
+      "createdAt": "2024-02-01T09:00:00Z"
+    },
+    {
+      "id": "4",
+      "walletId": "1",
+      "type": "deposit",
+      "amount": 750,
+      "description": "Online sales",
+      "createdAt": "2024-02-10T14:30:00Z"
+    },
+    {
+      "id": "5",
+      "walletId": "1",
+      "type": "withdraw",
+      "amount": 750,
+      "description": "Equipment purchase",
+      "createdAt": "2024-02-20T11:00:00Z"
+    },
+    {
+      "id": "6",
+      "walletId": "2",
+      "type": "deposit",
+      "amount": 50000,
+      "description": "Initial funding",
+      "createdAt": "2025-08-23T10:00:00Z"
+    },
+    {
+      "id": "7",
+      "walletId": "2",
+      "type": "deposit",
+      "amount": 25000,
+      "description": "Product sales revenue",
+      "createdAt": "2025-08-24T14:30:00Z"
+    },
+    {
+      "id": "8",
+      "walletId": "3",
+      "type": "deposit",
+      "amount": 2000,
+      "description": "Initial deposit",
+      "createdAt": "2025-08-23T15:00:00Z"
+    },
+    {
+      "id": "9",
+      "walletId": "3",
+      "type": "withdraw",
+      "amount": 499.5,
+      "description": "Product purchase",
+      "createdAt": "2025-08-25T09:15:00Z"
+    },
+    {
+      "id": "10",
+      "walletId": "4",
+      "type": "deposit",
+      "amount": 3000,
+      "description": "Salary deposit",
+      "createdAt": "2025-08-24T08:00:00Z"
+    },
+    {
+      "id": "11",
+      "walletId": "4",
+      "type": "withdraw",
+      "amount": 1000,
+      "description": "Monthly expenses",
+      "createdAt": "2025-08-26T16:00:00Z"
+    },
+    {
+      "id": "12",
+      "walletId": "5",
+      "type": "deposit",
+      "amount": 1800,
+      "description": "Freelance payment",
+      "createdAt": "2025-08-25T11:30:00Z"
+    },
+    {
+      "id": "13",
+      "walletId": "6",
+      "type": "deposit",
+      "amount": 1500,
+      "description": "Initial balance",
+      "createdAt": "2025-08-23T12:00:00Z"
+    },
+    {
+      "id": "14",
+      "walletId": "6",
+      "type": "withdraw",
+      "amount": 500,
+      "description": "Subscription payment",
+      "createdAt": "2025-08-27T10:00:00Z"
+    },
+    {
+      "id": "15",
+      "walletId": "7",
+      "type": "deposit",
+      "amount": 1200,
+      "description": "Refund received",
+      "createdAt": "2025-08-28T14:20:00Z"
+    },
+    {
+      "id": "16",
+      "walletId": "7",
+      "type": "withdraw",
+      "amount": 399.25,
+      "description": "Online purchase",
+      "createdAt": "2025-08-29T09:45:00Z"
+    },
+    {
+      "id": "17",
+      "walletId": "22",
+      "type": "deposit",
+      "amount": 100000000000,
+      "description": "Business capital",
+      "createdAt": "2025-08-24T00:00:00Z"
+    },
+    {
+      "id": "18",
+      "walletId": "22",
+      "type": "deposit",
+      "amount": 50000000000,
+      "description": "Investment return",
+      "createdAt": "2025-08-30T12:00:00Z"
+    },
+    {
+      "id": "19",
+      "walletId": "23",
+      "type": "deposit",
+      "amount": 5000,
+      "description": "Test deposit",
+      "createdAt": "2025-08-25T20:00:00Z"
+    },
+    {
+      "id": "20",
+      "walletId": "23",
+      "type": "withdraw",
+      "amount": 220,
+      "description": "Test withdrawal",
+      "createdAt": "2025-08-31T10:30:00Z"
+    },
+    {
+      "id": "6186",
+      "walletId": "1",
+      "type": "deposit",
+      "amount": 5000,
+      "description": "Testing 1 from website",
+      "createdAt": "2025-12-25T19:08:14.237Z"
+    }
+  ]
+}

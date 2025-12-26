@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShop | All Products</title>
+    <link rel="stylesheet" href="style/store.css">
+    <link rel="stylesheet" href="style/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="super-nav">
+        <div class="container super-flex">
+            <div class="contact-info">
+                <span><i class="fa-solid fa-location-dot"></i> 40, Elhilaly St, Assiut, Egypt</span>
+                <span><i class="fa-solid fa-phone"></i> 01064018172</span>
+            </div>
+            <div class="extra-info">
+                <span>USD <i class="fa-solid fa-chevron-down"></i></span>
+                <span>English <i class="fa-solid fa-chevron-down"></i></span>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="top-nav">
+        <div class="container nav-flex">
+            <div class="logo">e-shop<span class="dot">.</span></div>
+            
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search products..." onkeyup="applyFilters()">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="user-actions">
+                <button onclick="toggleDarkMode()" class="icon-btn" title="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <a href="cart.html" class="action-item">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" class="badge">0</span>
+                    </div>
+                    <div class="action-text">
+                        <small>Cart</small>
+                        <strong>$0.00</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="action-item">
+                    <div class="icon-wrapper">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="action-text">
+                        <small>User</small>
+                        <strong>Account</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bottom-nav">
+        <div class="container nav-container">
+            <a href="products.html" class="menu-btn active-link"><i class="fa-solid fa-bars"></i> All Categories</a>
+            
+            <ul class="center-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html" class="active-link">Products</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul class="right-links">
+                <li><a href="#">LIMITED SALE <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Best Seller</a></li>
+                <li><a href="#">New Arrival</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container shop-page-layout">
+        
+        <h1 class="page-title">Products</h1>
+        <p class="breadcrumb-nav">Home > Products</p>
+        
+        <div class="horizontal-filter-bar">
+            <div class="filter-options">
+                
+                <select id="categorySelect" onchange="applyFilters()">
+                    <option value="All">All Categories</option>
+                    <option value="Peripherals">Peripherals</option>
+                    <option value="Storage">Storage</option>
+                    <option value="Phones">Phones</option>
+                    <option value="Audio">Audio</option>
+                    <option value="Monitors">Monitors</option>
+                    <option value="Accessories">Accessories</option>
+                </select>
+
+                <select id="brandSelect" onchange="applyFilters()">
+                    <option value="All">All Brands</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Logitech">Logitech</option>
+                    <option value="Razer">Razer</option>
+                    <option value="Corsair">Corsair</option>
+                    <option value="Dell">Dell</option>
+                    <option value="Asus">Asus</option>
+                </select>
+
+                <select id="priceRangeSelect" onchange="applyFilters()">
+                    <option value="All">All Prices</option>
+                    <option value="0-50">Under $50</option>
+                    <option value="50-200">$50 - $200</option>
+                    <option value="200-1000">$200 - $1,000</option>
+                    <option value="1000+">Over $1,000</option>
+                </select>
+            </div>
+            
+            <div class="sort-options">
+                <span class="result-count">Sort by:</span>
+                <select id="sortSelect" onchange="applyFilters()">
+                    <option value="default">Default</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="main-shop-area">
+            <aside class="left-sidebar">
+                <h3 style="margin-top: 0;">Quick Links</h3>
+                <div class="filter-box">
+                    <ul style="padding-left: 20px;">
+                        <li style="margin-bottom: 10px;"><a href="#" onclick="quickFilterCategory('Phones')">Smartphones</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" onclick="quickFilterCategory('Audio')">Headphones</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" onclick="quickFilterCategory('Storage')">Hard Drives</a></li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <div id="product-container" class="product-grid-main">
+                </div>
+        </div>
+
+     
+        
+    </div>
+    
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>E-Shop.</h4>
+                <p>40, Elhilaly St, Assiut, Egypt</p>
+                <p>01064018172</p>
+            </div>
+            <div>
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="products.html">Phones</a></li>
+                    <li><a href="products.html">Laptops</a></li>
+                    <li><a href="products.html">Audio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <p>
+                    <i class="fa-brands fa-facebook"></i> 
+                    <i class="fa-brands fa-instagram"></i> 
+                    <i class="fa-brands fa-twitter"></i>
+                </p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 E-Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/store.js"></script>
+</body>
+</html>
