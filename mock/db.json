@@ -9,7 +9,7 @@
       "name": "USB-C Fast Charger 65W",
       "description": "Universal fast charger compatible with laptops and phones",
       "price": 39.99,
-      "quantity": 120,
+      "quantity": 90,
       "category": "Accessories",
       "createdAt": "2025-10-05T14:00:00Z"
     },
@@ -19,7 +19,7 @@
       "name": "Mechanical Gaming Keyboard",
       "description": "RGB backlit mechanical keyboard with Cherry MX switches",
       "price": 129.99,
-      "quantity": 30,
+      "quantity": 3,
       "category": "Peripherals",
       "createdAt": "2025-10-12T09:15:00Z"
     },
@@ -49,7 +49,7 @@
       "name": "Redragon M908 IMPACT MMO Gaming Mouse",
       "description": "High precision MMO gaming mouse with 12 programmable buttons",
       "price": 599,
-      "quantity": 450,
+      "quantity": 449,
       "category": "Peripherals",
       "createdAt": "2025-11-02T10:00:00Z"
     },
@@ -169,7 +169,7 @@
       "name": "Bose QuietComfort 45 Headphones",
       "description": "Legendary noise cancelling with signature comfort",
       "price": 6999,
-      "quantity": 6,
+      "quantity": 4,
       "category": "Audio",
       "createdAt": "2025-12-14T10:00:00Z"
     },
@@ -189,7 +189,7 @@
       "name": "TP-Link Archer AX50 Wi-Fi 6 Router",
       "description": "Next-gen Wi-Fi 6 router for faster connections",
       "price": 1100,
-      "quantity": 33,
+      "quantity": 32,
       "category": "Networking",
       "createdAt": "2025-12-18T10:00:00Z"
     },
@@ -624,19 +624,121 @@
       ],
       "totalAmount": 149.97,
       "createdAt": "2025-12-26T12:00:00Z"
+    },
+    {
+      "id": "b100",
+      "customerEmail": "admin@eshop.com",
+      "items": [
+        {
+          "productId": "3",
+          "productName": "Mechanical Gaming Keyboard",
+          "quantity": 17,
+          "price": 129.99
+        }
+      ],
+      "totalAmount": 2209.83,
+      "createdAt": "2025-12-26T22:48:51.121Z"
+    },
+    {
+      "id": "2b37",
+      "customerEmail": "john.doe@example.com",
+      "items": [
+        {
+          "productId": "2",
+          "productName": "USB-C Fast Charger 65W",
+          "quantity": 1,
+          "price": 39.99
+        }
+      ],
+      "totalAmount": 39.99,
+      "createdAt": "2025-12-26T22:49:50.210Z"
+    },
+    {
+      "id": "029c",
+      "customerEmail": "admin@eshop.com",
+      "items": [
+        {
+          "productId": "3",
+          "productName": "Mechanical Gaming Keyboard",
+          "quantity": 1,
+          "price": 129.99
+        },
+        {
+          "productId": "3",
+          "productName": "Mechanical Gaming Keyboard",
+          "quantity": 1,
+          "price": 129.99
+        }
+      ],
+      "totalAmount": 259.98,
+      "createdAt": "2025-12-26T22:50:11.520Z"
+    },
+    {
+      "id": "83cc",
+      "customerEmail": "admin@eshop.com",
+      "items": [
+        {
+          "productId": "2",
+          "productName": "USB-C Fast Charger 65W",
+          "quantity": 23,
+          "price": 39.99
+        },
+        {
+          "productId": "18",
+          "productName": "Bose QuietComfort 45 Headphones",
+          "quantity": 1,
+          "price": 6999
+        }
+      ],
+      "totalAmount": 7918.77,
+      "createdAt": "2025-12-26T22:58:46.223Z"
+    },
+    {
+      "id": "b684",
+      "customerEmail": "admin@eshop.com",
+      "items": [
+        {
+          "productId": "18",
+          "productName": "Bose QuietComfort 45 Headphones",
+          "quantity": 1,
+          "price": 6999
+        }
+      ],
+      "totalAmount": 6999,
+      "createdAt": "2025-12-26T23:00:09.770Z"
+    },
+    {
+      "id": "8c46",
+      "customerEmail": "john.doe@example.com",
+      "items": [
+        {
+          "productId": "2",
+          "productName": "USB-C Fast Charger 65W",
+          "quantity": 1,
+          "price": 39.99
+        },
+        {
+          "productId": "20",
+          "productName": "TP-Link Archer AX50 Wi-Fi 6 Router",
+          "quantity": 1,
+          "price": 1100
+        }
+      ],
+      "totalAmount": 1139.99,
+      "createdAt": "2025-12-26T23:46:34.610Z"
     }
   ],
   "wallets": [
     {
       "id": "1",
       "ownerEmail": "admin@eshop.com",
-      "balance": 7500,
+      "balance": 19000000,
       "createdAt": "2025-09-28T00:00:00Z"
     },
     {
       "id": "2",
       "ownerEmail": "youssef@gmail.com",
-      "balance": 100931,
+      "balance": 107031,
       "createdAt": "2025-12-20T22:41:31.842403Z"
     },
     {
@@ -756,7 +858,7 @@
     {
       "id": "22",
       "ownerEmail": "admin@gmail.com",
-      "balance": 149999999101,
+      "balance": 149259010212,
       "createdAt": "2025-12-24T23:03:38.647071Z"
     },
     {
@@ -770,6 +872,22 @@
       "ownerEmail": "newtester@gmail.com",
       "balance": 49500,
       "createdAt": "2025-12-26T15:07:51.338023Z"
+    },
+    {
+      "id": "f85e",
+      "ownerEmail": "user@testing1.com",
+      "balance": 150
+    },
+    {
+      "id": "e7e5",
+      "ownerEmail": "user@testing1.com",
+      "balance": 190
+    },
+    {
+      "id": "15f9",
+      "ownerEmail": "user@testing2.com",
+      "balance": 19000000,
+      "createdAt": "2025-12-16T23:00:00.000Z"
     }
   ],
   "walletTransactions": [
@@ -940,6 +1058,85 @@
       "amount": 5000,
       "description": "Testing 1 from website",
       "createdAt": "2025-12-25T19:08:14.237Z"
+    },
+    {
+      "id": "17ed",
+      "walletId": "1",
+      "type": "withdraw",
+      "amount": 6000,
+      "reference": "testin",
+      "description": "Withdrawal",
+      "createdAt": "2025-12-26T22:44:06.350Z"
+    },
+    {
+      "id": "82b6",
+      "walletId": "2",
+      "type": "deposit",
+      "amount": 8000,
+      "reference": "uiaq111-23",
+      "description": "gift",
+      "createdAt": "2025-12-26T22:45:06.051Z"
+    },
+    {
+      "id": "ad9a",
+      "walletId": "2",
+      "type": "withdraw",
+      "amount": 1900,
+      "reference": "pay-6999",
+      "description": "withdraw testing",
+      "createdAt": "2025-12-26T22:45:32.556Z"
+    },
+    {
+      "id": "d187",
+      "walletId": "1",
+      "type": "deposit",
+      "amount": 500,
+      "reference": "REF-12345",
+      "description": "Deposit from bank transfer",
+      "createdAt": "2025-12-26T23:00:00.000Z"
+    },
+    {
+      "id": "062f",
+      "walletId": "22",
+      "type": "withdraw",
+      "amount": 50000000,
+      "reference": "pay-61024",
+      "description": "withdraw testing",
+      "createdAt": "2025-12-26T23:47:19.666Z"
+    },
+    {
+      "id": "c3cf",
+      "walletId": "22",
+      "type": "deposit",
+      "amount": 9011111,
+      "reference": "uiaq111-23434",
+      "description": "gift 1",
+      "createdAt": "2025-12-26T23:47:43.464Z"
+    },
+    {
+      "id": "b5f8",
+      "walletId": "22",
+      "type": "withdraw",
+      "amount": 700000000,
+      "reference": "pay-612414",
+      "description": "withdraw testing 44",
+      "createdAt": "2025-12-26T23:48:09.777Z"
+    },
+    {
+      "id": "67f3",
+      "walletId": "1",
+      "type": "deposit",
+      "amount": 500,
+      "reference": "REF-12345",
+      "description": "Deposit from bank transfer"
+    },
+    {
+      "id": "6ee7",
+      "walletId": "1",
+      "type": "withdraw",
+      "amount": 200,
+      "reference": "REF-12346",
+      "description": "Withdrawal to bank account"
     }
   ]
 }
